@@ -9,5 +9,10 @@ namespace WebAppEFCoreWithRepoPattern.Models
         public string? Name { get; set; }
         public int Age { get; set; }
 
+        [StringLength(15)]
+        public string? PhNo { get; set; }
+        public int CourseId { get; set; }
+        public Course? Course { get; set; } // Navigation Property  
+
     }
 }
